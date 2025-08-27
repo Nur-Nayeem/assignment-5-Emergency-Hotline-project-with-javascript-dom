@@ -58,3 +58,26 @@ const clearBtn = document.getElementById("clear-btn")
 clearBtn.addEventListener("click", function () {
     historyCardSecction.innerHTML = ""
 })
+
+
+
+//Copy button functionality
+const copyBtns = document.getElementsByClassName("copy-btn");
+let copyCount = getValue("copy-count");
+for (const btn of copyBtns) {
+    btn.addEventListener("click", function () {
+        copyCount += 1;
+        setValue("copy-count", copyCount)
+        let number = btn.parentNode.parentNode.children[1].children[0].innerText;
+        if (number) {
+            navigator.clipboard.writeText(number)
+        }
+        else {
+            console.log("faild to copy");
+
+        }
+
+    })
+
+}
+
