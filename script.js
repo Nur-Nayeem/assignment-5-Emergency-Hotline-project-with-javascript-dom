@@ -49,3 +49,12 @@ for (const btn of callBtns) {
         }
     })
 }
+
+
+
+// history clear functionality
+
+const clearBtn = document.getElementById("clear-btn")
+clearBtn.addEventListener("click", function () {
+    historyCardSecction.innerHTML = ""
+})
