@@ -26,6 +26,9 @@ for (const btn of callBtns) {
         let currentCoin = getValue("total-coin")
         let name = btn.parentNode.parentNode.children[0].children[0].innerText;
         let number = btn.parentNode.parentNode.children[1].children[0].innerText;
+        let now = new Date();
+        let localTimeString = now.toLocaleTimeString();
+
         if (currentCoin >= 20) {
             alert("Calling...   " + name + "  (" + number + ")");
             currentCoin -= 20;
@@ -38,7 +41,7 @@ for (const btn of callBtns) {
                             <h2>${name}</h2>
                             <p>${number}</p>
                         </div>
-                        <div>11:36:58 AM</div>
+                        <div>${localTimeString}</div>
                     </div>
             
             `
@@ -80,4 +83,3 @@ for (const btn of copyBtns) {
     })
 
 }
-
