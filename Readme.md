@@ -6,27 +6,25 @@
 
 <h3>Differences:</h3>
 <ol>
-    <li>
-        <b>getElementById(id):</b> This method select a single element from DOM based on its unique id attribute.
-    </li>
+<li><b>getElementById(id):</b> This method select a single element from DOM based on its unique id attribute.
+</li>
 
-    <li>
-        <b>getElementsByClassName(className):</b> It select all elements those have that specific class name.
-    </li>
+<li>
+    <b>getElementsByClassName(className):</b> It select all elements those have that specific class name.
+</li>
 
-    <li>
-        <b>querySelector(selector):</b> This method select the first element that matches the selector (use in css). It
+<li>
+    <b>querySelector(selector):</b> This method select the first element that matches the selector (use in css). It
         selects
         first mathing element based on some css selector for example: for id selector use '#id-name' , class selection
         use '.clss-name', tag selection use 'tag-name' (div, h1, span) , attribute selection and other combination of
         css selector etc.
-    </li>
-    <li>
+</li>
+<li>
         <b>querySelectorAll(selector):</b> This method select all elements that matches the selector (use in css). It
         also
         select elements based on id, class-name , tag-name, attribute and other combination of css selector etc.
-    </li>
-
+</li>
 </ol>
 </br>
 </br>
@@ -41,17 +39,19 @@
 
 <ol>
 
-    <li> <b>Select parent element :</b>
-        const body = document.getQuerySelector('body')</li>
+<li> 
+     <b>Select parent element :</b>
+        const body = document.getQuerySelector('body')
+</li>
 
-    <li> <b>Create new element:</b>
+<li> <b>Create new element:</b>
         const newElement = document.createElement('div')</li>
 
 
-    <li> <b>Add content to the new element:</b>
+<li> <b>Add content to the new element:</b>
         newElement.innerHTML = 'content of new element'</li>
 
-    <li> <b>Insert the newCreated elemet to the parent:</b>
+<li> <b>Insert the newCreated elemet to the parent:</b>
         body.appendChild(newElement)</li>
 
 </ol>
@@ -90,6 +90,9 @@ lisener instead of all child element also autometically haldles dynamic operatio
 deleting element.
 </p>
 
+</br>
+</br>
+
 <h1>5. What is the difference between preventDefault() and stopPropagation() methods?</h1>
 
 <p>
@@ -101,16 +104,16 @@ deleting element.
 
 <ol>
 
-    <li>
+<li>
         <b>event.preventDefault():</b> this method stop default behavior of navigating to url specified in the
         href atttribute. for exapmple a form has a submit button containing a click event handler , if user
         click that button it will submit form data to server and reload the page by default. For stoping this
         default behavior inside the eventListener callback function event.preventDefault() will be added.
-
-    <li>
+</li>
+<li>
         <b>stopPropagation():</b> This method stop default event bubbling behavior. We know that if a child and
         parent element in DOM has same type of event listener , calling child event handler autometically call
         the parent its called event bubbling , to stop this bubbling behavior stopPropagation() is used.
-    </li>
+</li>
 
 </ol>
