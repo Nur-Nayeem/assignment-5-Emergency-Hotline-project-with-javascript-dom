@@ -68,7 +68,8 @@
     Let a user make an action like click an element.The event first triggers any event handlers directly
     attached to the target element. After that if its parent has the same type of event listeners those also
     will be triggers. If the parent's parent has the same type of event listener that will also triggered, and
-    keeps going this until it reaches the root element its called event bubbling.</p>
+    keeps going this until it reaches the root element its called event bubbling.
+</p>
 
 </br>
 </br>
