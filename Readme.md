@@ -63,8 +63,9 @@
 <h2>Ans:</h2>
 <p>Event bubbling is the event propagation process in javascript DOM. When an event happens in an element (such
     as click), the event doesn’t just stay there it also moves upward through its parent, then the parent’s
-    parent, and keeps going until it reaches the very top of the page (the document).</br>
-
+    parent, and keeps going until it reaches the very top of the page (the document).
+</p>
+<p>
     Let a user make an action like click an element.The event first triggers any event handlers directly
     attached to the target element. After that if its parent has the same type of event listeners those also
     will be triggers. If the parent's parent has the same type of event listener that will also triggered, and
