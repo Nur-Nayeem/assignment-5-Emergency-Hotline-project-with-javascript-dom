@@ -74,6 +74,7 @@ for (const btn of copyBtns) {
         let number = btn.parentNode.parentNode.children[1].children[0].innerText;
         if (number) {
             navigator.clipboard.writeText(number)
+            alert("copied " + number)
         }
         else {
             console.log("faild to copy");
