@@ -41,7 +41,7 @@
 
 <li> 
      <b>Select parent element :</b>
-        const body = document.getQuerySelector('body')
+        const body = document.querySelector('body')
 </li>
 
 <li> <b>Create new element:</b>
